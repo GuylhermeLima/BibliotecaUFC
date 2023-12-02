@@ -1,8 +1,9 @@
 package trabalhomarcosvinicius;
 
 public class Pessoa {
-	  private String nome;
+	private String nome;
     private String email;
+    private int id;
     private String senha;    
     private String cpf;
     private String telefone;
@@ -10,8 +11,22 @@ public class Pessoa {
     private String dataNacimento;
     private boolean statusAtivo;
     
+    //MÉTODOS DE LOGIN DO SISTEMA
+    
+    public void login() {
+    	
+    }
+    
+    public void logoff() {
+    	
+    }
+    
     //OPERAÇÕES PRÓPRIAS DO SISTEMA DE ADMINISTRAÇÃO DOS LIVROS
     
+    //CONSULTA OS LIVROS DO SISTEMA
+    public void consultarLivro() {
+    	
+    }
     //SOLICITA O EMPRESTIMO ONLINE PARA PEGAR NO DIA
     public void solicitarEmprestimo() {
         
@@ -33,6 +48,10 @@ public class Pessoa {
 
     public String getEmail() {
         return this.email;
+    }
+    
+    public int getId() {
+    	return this.id;
     }
 
     public String getSenha() {
@@ -67,6 +86,10 @@ public class Pessoa {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+    
+    public void setId(int id) {
+    	this.id = id;
     }
 
     public void setSenha(String senha) {

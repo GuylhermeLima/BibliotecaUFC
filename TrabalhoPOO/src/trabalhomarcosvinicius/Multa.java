@@ -1,10 +1,8 @@
 package trabalhomarcosvinicius;
 
-import java.math.BigDecimal;
-
 public class Multa {
 	
-    private BigDecimal valorMulta;
+    private float valor;
     private boolean prazoAtrasado;
 
         
@@ -25,8 +23,8 @@ public class Multa {
 
     
     //GETTERS
-    public BigDecimal getValorMulta() {
-        return this.valorMulta;
+    public float getValor() {
+        return this.valor;
     }
     
 	public boolean isPrazoAtrasado() {
@@ -35,10 +33,8 @@ public class Multa {
 
 
     //SETTERS
-    public void setValorMulta(BigDecimal valorMulta) {
-    	if(valorMulta != null) {
-    		this.valorMulta = valorMulta;
-        }
+    public void setValor(float valor) {
+		this.valor = valor;
     }
 
 	public void setPrazoAtrasado(boolean prazoAtrasado) {

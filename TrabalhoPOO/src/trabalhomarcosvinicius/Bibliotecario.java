@@ -6,15 +6,6 @@ public class Bibliotecario extends Pessoa {
     private String departamento;
     private String dataEfetivacao;
     
-    //METODOS PARA LOGIN E LOGOFF DO OPERADOR 
-    public void login() {
-
-    }
-
-    public void logoff() {
-        
-        
-    }
     //CRUD LIVRO
     public void adicionarLivros(){
          
@@ -57,39 +48,6 @@ public class Bibliotecario extends Pessoa {
 
         
     }
-
-    
-    public void consultarLivro() {
-        
-        
-    }
-    
-    //CRUD ALUNO
-    public void cadastarAluno() {
-
-    }
-    public void alterarDadosAluno() {
-
-        
-    }
-    public void removerAluno(){
-
-        
-    }
-    
-    //CRUD SERVIDOR
-    public void cadastrarServidor() {
-
-        
-    }
-    public void alterarDadosServidor() {
-
-        
-    }
-    public void removerServidor(){
-
-        
-    }  
 
     //GETTERS 
     public long getIdBibliotecario() {

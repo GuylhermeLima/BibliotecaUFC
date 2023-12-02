@@ -1,17 +1,6 @@
 package trabalhomarcosvinicius;
 
 public class Aluno extends Pessoa{
-	
-    private long matricula;
-        
-    //METODOS PARA LOGIN E LOGOFF NO SISTEMA
-    public void loginAluno() {
-        
-    }
-
-    public void logoffAluno() {
-        
-    }
     
     
     // AQUI OS ALUNOS PODEM APLICAR UMA CADASTRO NO SISTEMA
@@ -30,16 +19,10 @@ public class Aluno extends Pessoa{
     
     //GETTERS
 
-    public long getMatricula() {
-        return this.matricula;
-    }
     
     
     //SETTERS
 
-    public void setMatricula(long matricula) {
-        this.matricula = matricula;
-    }
 
    
 }
