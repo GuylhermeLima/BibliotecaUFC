@@ -42,31 +42,41 @@ public class Livro {
     
     //SETTERS
     
-    public void setTitulo(String titulo) {
-    	this.titulo = titulo;
-    }
-    
-    public void setAutor(Autor autor) {
-    	this.autor = autor;
-    }
-    
-    public void setIsbn(long isbn) {
-    	this.isbn = isbn;
-    }
-    
-    public void setEdicao (String edicao) {
-    	this.edicao = edicao;
-    }
-    
-    public void setAnoDeLancamento(String anoDeLancamento) {
-    	this.anoDeLancamento = anoDeLancamento;
-    }
-    
-    public void setCategoria(String categoria) {
-    	this.categoria = categoria;
-    }
-    
-    public void setStatusEmprestado(boolean statusEmprestado) {
-    	this.statusEmprestado = statusEmprestado;
-    }
+	public void setTitulo(String titulo) {
+	    	if(titulo != null) {
+	    		this.titulo = titulo;
+	    	}
+	    }
+	public void setAutor(Autor autor) {
+	    	if(autor != null) {
+	    		this.autor = autor;}
+	    }
+	    
+	public void setIsbn(long isbn) {
+	    	if(isbn <= 999999999) {
+	    		this.isbn = isbn;
+	    	}
+	    }
+	    
+	public void setEdicao (String edicao) {
+	    	if(edicao != null) {
+	    		this.edicao = edicao;
+	    	}
+	    }
+	    
+	public void setAnoDeLancamento(String anoDeLancamento) {
+	    	if(anoDeLancamento != null) {
+	    		this.anoDeLancamento = anoDeLancamento;
+	    	}
+	    }
+	    
+	public void setCategoria(String categoria) {
+	    	if(categoria != null) {
+	    		this.categoria = categoria;
+	    	}
+	    }
+	    
+	public void setStatusEmprestado(boolean statusEmprestado) {
+	    	this.statusEmprestado = statusEmprestado;
+	    }
 }
