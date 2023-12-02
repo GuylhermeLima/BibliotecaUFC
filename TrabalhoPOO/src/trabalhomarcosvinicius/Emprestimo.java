@@ -6,8 +6,8 @@ public class Emprestimo {
 	private Pessoa pessoa;
 	private Livro livro;
 	private LocalDateTime dataReserva;
-  private LocalDateTime dataRetiradaEmprestimo;
-  private LocalDateTime dataVencimento;
+	private LocalDateTime dataRetiradaEmprestimo;
+	private LocalDateTime dataVencimento;
     
     
     //GETTERS
@@ -21,11 +21,11 @@ public class Emprestimo {
         return this.dataReserva;
     }
 
-  public LocalDateTime getDataRetiradaEmprestimo() {
+	public LocalDateTime getDataRetiradaEmprestimo() {
         return this.dataRetiradaEmprestimo;
     }
 
-  public LocalDateTime getDataVencimento() {
+	public LocalDateTime getDataVencimento() {
         return this.dataVencimento;
     }
 	
@@ -45,15 +45,15 @@ public class Emprestimo {
 			this.dataReserva = dataReserva;
         }
     }
-
-  public void setDataRetiradaEmprestimo(LocalDateTime dataRetiradaEmprestimo) {
-    	if(dataRetiradaEmprestimo != null) {
+	
+	public void setDataRetiradaEmprestimo(LocalDateTime dataRetiradaEmprestimo) {
+    		if(dataRetiradaEmprestimo != null) {
     		this.dataRetiradaEmprestimo = dataRetiradaEmprestimo;
         }
     }
 
-  public void setDataVencimento(LocalDateTime dataVencimento) {
-    	if(dataVencimento != null) {
+	public void setDataVencimento(LocalDateTime dataVencimento) {
+    		if(dataVencimento != null) {
     		this.dataVencimento = dataVencimento;
         }
     }
