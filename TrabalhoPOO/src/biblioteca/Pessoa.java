@@ -3,12 +3,12 @@ package biblioteca;
 public class Pessoa {
 	private String nome;
     private String email;
-    private String id;
+    private long id;
     private String senha;    
     private String cpf;
     private String telefone;
     private String endereco;
-    private String dataNacimento;
+    private String dataNascimento;
     private boolean statusAtivo;
     
     //MÉTODOS DE LOGIN DO SISTEMA
@@ -50,7 +50,7 @@ public class Pessoa {
         return this.email;
     }
     
-    public String getId() {
+    public long getId() {
     	return this.id;
     }
 
@@ -70,8 +70,8 @@ public class Pessoa {
         return this.endereco;
     }
 
-    public String getDataNacimento() {
-        return this.dataNacimento;
+    public String getDataNascimento() {
+        return this.dataNascimento;
     }
 
     public boolean getStatusAtivo() {
@@ -88,7 +88,7 @@ public class Pessoa {
         this.email = email;
     }
     
-    public void setId(String id) {
+    public void setId(long id) {
     	this.id = id;
     }
 
@@ -108,8 +108,8 @@ public class Pessoa {
         this.endereco = endereco;
     }
   
-    public void setDataNacimento(String dataNacimento) {
-        this.dataNacimento = dataNacimento;
+    public void setDataNascimento(String dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
   
     public void setStatusAtivo(boolean statusAtivo){

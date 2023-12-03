@@ -27,8 +27,8 @@ public class Model {
 	}
 	
 	public void setUsuario(Pessoa usuario) {
-		if(usuario != null && usuario.getId()!= null) {
-			usuarios.put(usuario.getId(), usuario);
+		if(usuario != null && usuario.getId()!= 0) {
+			usuarios.put(Long.toString(usuario.getId()), usuario);
 		}
 	}
 	

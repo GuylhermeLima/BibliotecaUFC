@@ -1,5 +1,8 @@
 package biblioteca;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Servidor extends Pessoa{
 
     private String dataEfetivacao;
