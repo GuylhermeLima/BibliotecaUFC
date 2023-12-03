@@ -55,6 +55,8 @@ public class Servidor extends Pessoa{
 	    //SETTERS
 	    
 	public void setDataEfetivacao(String dataEfetivacao) {
-	        this.dataEfetivacao = dataEfetivacao;
+		if(dataEfetivacao != null){
+	        	this.dataEfetivacao = dataEfetivacao;
+		}
 	}
 }
