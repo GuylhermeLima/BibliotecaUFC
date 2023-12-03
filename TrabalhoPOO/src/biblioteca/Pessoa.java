@@ -1,4 +1,4 @@
-package trabalhomarcosvinicius;
+package biblioteca;
 
 public class Pessoa {
 	private String nome;

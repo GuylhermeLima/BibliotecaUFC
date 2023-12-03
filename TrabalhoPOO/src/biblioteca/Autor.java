@@ -1,5 +1,5 @@
 
-package trabalhomarcosvinicius;
+package biblioteca;
 
 
 public class Autor {
