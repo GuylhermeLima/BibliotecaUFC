@@ -3,7 +3,7 @@ package biblioteca;
 public class Pessoa {
 	private String nome;
     private String email;
-    private int id;
+    private String id;
     private String senha;    
     private String cpf;
     private String telefone;
@@ -50,7 +50,7 @@ public class Pessoa {
         return this.email;
     }
     
-    public int getId() {
+    public String getId() {
     	return this.id;
     }
 
@@ -88,7 +88,7 @@ public class Pessoa {
         this.email = email;
     }
     
-    public void setId(int id) {
+    public void setId(String id) {
     	this.id = id;
     }
 
