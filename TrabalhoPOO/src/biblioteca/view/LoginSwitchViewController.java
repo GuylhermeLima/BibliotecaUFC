@@ -23,15 +23,12 @@ public class LoginSwitchViewController implements Observer{
 				view.initLoginSwitchView(model);
 				break;
 			case "3" : System.out.println("LOGIN USUÁRIO: BIBLIOTECARIO");
-				System.out.println("(Indisponível no momento)");
-				view.initLoginSwitchView(model);
+				LoginBibliotecarioView view3 = new LoginBibliotecarioView();
+				view3.initLoginBibliotecarioView(model);
 				break;
 			case "4" : System.out.println("Voltando a tela anterior");
 				MainView view0 = new MainView();	
 				view0.initMainView(model);
-				break;
-			default:
-				System.out.println("ENTRADA INVÁLIDA, TENTE OUTRA VEZ");
 				break;
 		}
 	}

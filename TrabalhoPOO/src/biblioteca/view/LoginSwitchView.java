@@ -28,8 +28,6 @@ public class LoginSwitchView implements Observer{
 			System.out.println("==== Biblioteca UFC ====");
 			System.out.println("--- Seleção de Login ---");
 			System.out.println();
-			System.out.println("Usuarios Cadastrados: " + totalUsers);
-			System.out.println();
 			for(int i=0;i<opcoes.length;i++) {
 				System.out.println(opcoes[i]);
 			}

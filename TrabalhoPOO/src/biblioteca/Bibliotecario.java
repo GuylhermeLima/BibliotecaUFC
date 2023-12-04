@@ -12,6 +12,13 @@ public class Bibliotecario extends Pessoa {
     public Bibliotecario() {
     	this.livros = new ArrayList<>();
     }
+    
+    public Bibliotecario(String nome,long id,String senha) {
+    	setNome(nome);
+    	setId(id);
+    	setSenha(senha);
+    	this.livros = new ArrayList<>();
+    }
 
     // OPERAÇÕES DE LIVROS
 

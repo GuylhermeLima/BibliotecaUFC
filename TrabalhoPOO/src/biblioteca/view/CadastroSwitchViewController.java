@@ -23,15 +23,12 @@ public class CadastroSwitchViewController implements Observer{
 				view.initCadastroSwitchView(model);
 				break;
 			case "3" : System.out.println("CADASTRO USUÁRIO: BIBLIOTECARIO");
-				System.out.println("(Indisponível no momento)");
-				view.initCadastroSwitchView(model);	
+				CadastroBibliotecarioView view3 = new CadastroBibliotecarioView();
+				view3.initCadastroBibliotecarioView(model);	
 				break;
 			case "4" : System.out.println("Voltando");
 				MainView view0 = new MainView();
 				view0.initMainView(model);
-				break;
-			default:
-				System.out.println("ENTRADA INVÁLIDA, TENTE OUTRA VEZ");
 				break;
 		}
 	}

@@ -2,7 +2,7 @@ package biblioteca.view;
 
 import biblioteca.model.*;
 
-public class MainViewController {
+public class MainViewController implements Observer{
 	
 	private Model model;
 	private MainView view;
@@ -10,6 +10,7 @@ public class MainViewController {
 	public void initMainViewController(Model model, MainView view) {
 		this.model = model;  // Guarda o modelo
 		this.view = view;	 // Guarda a biblioteca.view
+		model.attachObserver(this);
 	}
 	
 	public void update() {

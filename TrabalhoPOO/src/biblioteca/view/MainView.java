@@ -6,7 +6,6 @@ import biblioteca.model.*;
 public class MainView implements Observer{
 	private Model model; //Guarda o modelo
 	private MainViewController controller; //Usado para guardar o controller
-	private int totalUsers; //Usado para guardar o total de usuários resgistrados
 	private boolean finalizar = false; // Usado para finalizar o programa
 	
 	public void finalizarSistema() {
@@ -14,7 +13,7 @@ public class MainView implements Observer{
 	}
 	
 	public void initMainView(Model model) {
-		finalizar = false;
+		this.finalizar = false;
 		this.model = model;
 		controller = new MainViewController();
 		controller.initMainViewController(model, this);
@@ -25,35 +24,31 @@ public class MainView implements Observer{
 	public void menuPrincipal() {
 		Scanner sc = new Scanner(System.in);
 		String opcoes[] = {"[1] - Login","[2] - Cadastro","[3] - Fechar"};
-		do {
+		while (!finalizar && sc!=null) {
 			System.out.println();
 			System.out.println("==== Biblioteca UFC ====");
 			System.out.println("----- Tela inicial -----");
 			System.out.println();
-			System.out.println("Usuarios Cadastrados: " + totalUsers);
-			if(model.getUsuarioAutenticado() != null) {
+			if(model.getgetUsuarioAutenticado() != null) {
 				opcoes[0] = "[1] - Logout";
 			}else{
 				opcoes[0] = "[1] - Login";
 			}
-			System.out.println();
-			System.out.println(opcoes[0]);
-			System.out.println(opcoes[1]);
-			System.out.println(opcoes[2]);
+			for(int i=0;i<opcoes.length;i++) {
+				System.out.println(opcoes[i]);
+			}
 			System.out.println();
 			System.out.println("Digite a opcao desejada: ");
 			String evento = sc.nextLine();
 			controller.selecaoEvento(evento);
-			
-		}while (!finalizar);
+		}
 		sc.close();
+		
 		
 		
 	}
 
 	public void update() {
-		
-		totalUsers = model.getTotalUsuarios();
 		
 	}
 	

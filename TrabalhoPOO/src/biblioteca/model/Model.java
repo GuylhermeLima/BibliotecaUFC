@@ -7,7 +7,8 @@ import biblioteca.*;
 import biblioteca.view.*;
 
 public class Model {
-	private HashMap<String,Pessoa> usuarios = new HashMap<String, Pessoa>();
+	private HashMap<String,Bibliotecario> bibliotecarios = new HashMap<String, Bibliotecario>();
+	private HashMap<String,Aluno> usuarios = new HashMap<String, Aluno>();
 	private Pessoa usuarioAutenticado;
 	private ArrayList<Observer> observers = new ArrayList<Observer>();
 	
@@ -19,23 +20,23 @@ public class Model {
 	
 	public Pessoa getUsuario(int id) {
 		if(id!=0) {
-			Pessoa usuario = usuarios.get(id);
+			Pessoa usuario = bibliotecarios.get(id);
 			return usuario;
 		}
 		
 		return null;
 	}
 	
-	public void setUsuario(Pessoa usuario) {
-		if(usuario != null && usuario.getId()!= 0) {
-			usuarios.put(Long.toString(usuario.getId()), usuario);
+	public void setUsuario(Bibliotecario usuario) {
+		if(usuario.getSenha() != null && usuario.getId()!= 0) {
+			bibliotecarios.put(Long.toString(usuario.getId()), usuario);
 		}
 	}
 	
 	public Pessoa autenticarUsuario(String id, String senha) {
 		Pessoa usuario;
 		if(id != null && senha != null) {
-			usuario = usuarios.get(id);
+			usuario = bibliotecarios.get(id);
 			if(usuario != null) {
 				if(id.equals(usuario.getId()) && senha.equals(usuario.getSenha())) {
 					usuarioAutenticado = usuario;
@@ -50,7 +51,7 @@ public class Model {
 		notifica();
 	}
 	
-	public Pessoa getUsuarioAutenticado() {
+	public Pessoa getgetUsuarioAutenticado() {
 		return usuarioAutenticado;
 	}
 	
@@ -65,10 +66,5 @@ public class Model {
 			observers.remove(observer);
 		}
 	}
-	
-	public int getTotalUsuarios(){
-		return usuarios.size();
-	}
-	
 	
 }
