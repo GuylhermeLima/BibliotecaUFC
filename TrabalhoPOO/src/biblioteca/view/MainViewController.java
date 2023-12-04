@@ -19,10 +19,12 @@ public class MainViewController {
 	public void selecaoEvento(String evento) {
 		switch(evento) {
 			case "1" :
-				LoginSwitchView view3 = new LoginSwitchView();
-				view3.initLoginSwitchView(model);
+				LoginSwitchView view2 = new LoginSwitchView();
+				view2.initLoginSwitchView(model);
 				break;
-			case "2" : System.out.println("OK,mas falta implementar");
+			case "2" : 
+				CadastroSwitchView view3 = new CadastroSwitchView();
+				view3.initCadastroSwitchView(model);
 				break;
 			case "3" : System.out.println("Saindo do sistema..");
 				view.finalizarSistema();	
