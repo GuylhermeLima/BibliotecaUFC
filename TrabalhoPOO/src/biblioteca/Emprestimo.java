@@ -1,4 +1,5 @@
 package biblioteca;
+
 import java.time.LocalDateTime;
 
 public class Emprestimo {
@@ -6,8 +7,8 @@ public class Emprestimo {
 	private Pessoa pessoa;
 	private Livro livro;
 	private LocalDateTime dataReserva;
-	private LocalDateTime dataRetiradaEmprestimo;
-	private LocalDateTime dataVencimento;
+	private LocalDateTime dataEmprestimo;
+	private LocalDateTime dataDevolucao;
     
     
     //GETTERS
@@ -19,15 +20,15 @@ public class Emprestimo {
 	}
 	public LocalDateTime getDataReserva() {
         return this.dataReserva;
-    }
+	}
 
-	public LocalDateTime getDataRetiradaEmprestimo() {
-        return this.dataRetiradaEmprestimo;
-    }
+	public LocalDateTime getDataEmprestimo() {
+        return this.dataEmprestimo;
+	}
 
-	public LocalDateTime getDataVencimento() {
-        return this.dataVencimento;
-    }
+	public LocalDateTime getDataDevolucao() {
+        return this.dataDevolucao;
+	}
 	
 	//SETTERS
 	public void setPessoa(Pessoa pessoa) {
@@ -43,19 +44,18 @@ public class Emprestimo {
 	public void setDataReserva(LocalDateTime dataReserva) {
 		if(dataReserva != null) {
 			this.dataReserva = dataReserva;
-        }
-    }
-	
-	public void setDataRetiradaEmprestimo(LocalDateTime dataRetiradaEmprestimo) {
-    		if(dataRetiradaEmprestimo != null) {
-    		this.dataRetiradaEmprestimo = dataRetiradaEmprestimo;
-        }
-    }
+        	}
+	}
 
-	public void setDataVencimento(LocalDateTime dataVencimento) {
-    		if(dataVencimento != null) {
-    		this.dataVencimento = dataVencimento;
-        }
-    }
-  
+	public void setDataEmprestimo(LocalDateTime dataEmprestimo) {
+    		if(dataEmprestimo != null) {
+    			this.dataEmprestimo = dataEmprestimo;
+        	}
+	}
+
+	public void setDataDevolucao(LocalDateTime dataDevolucao) {
+    		if(dataDevolucao != null) {
+    			this.dataDevolucao = dataDevolucao;
+		}
+	}
 }
