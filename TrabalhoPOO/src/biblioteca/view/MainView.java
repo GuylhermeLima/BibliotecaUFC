@@ -14,6 +14,7 @@ public class MainView implements Observer{
 	}
 	
 	public void initMainView(Model model) {
+		finalizar = false;
 		this.model = model;
 		controller = new MainViewController();
 		controller.initMainViewController(model, this);
@@ -25,7 +26,9 @@ public class MainView implements Observer{
 		Scanner sc = new Scanner(System.in);
 		String opcoes[] = {"[1] - Login","[2] - Cadastro","[3] - Fechar"};
 		do {
+			System.out.println();
 			System.out.println("==== Biblioteca UFC ====");
+			System.out.println("----- Tela inicial -----");
 			System.out.println();
 			System.out.println("Usuarios Cadastrados: " + totalUsers);
 			if(model.getUsuarioAutenticado() != null) {

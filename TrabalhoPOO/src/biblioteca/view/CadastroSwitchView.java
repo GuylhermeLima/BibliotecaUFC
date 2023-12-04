@@ -23,6 +23,7 @@ public class CadastroSwitchView implements Observer{
 		String opcoes[] = {"[1] - Aluno","[2] - Servidor", "[3] - Bibliotecario","[4] - Voltar"};
 		boolean testeEntrada = true;
 		do {
+			System.out.println();
 			System.out.println("==== Biblioteca UFC ====");
 			System.out.println("- Seleção de Cadastro  -");
 			System.out.println();
